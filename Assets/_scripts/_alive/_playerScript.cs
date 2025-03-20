@@ -40,12 +40,14 @@ public class _playerScript : MonoBehaviour
                 Debug.Log("Press R");
             }
         }
-
+        Debug.Log(_insOlur.CompareTag("kasa") + "-----" + _npcMasterManager._npcKasada);
         if (_insOlur.CompareTag("kasa") && _npcMasterManager._npcKasada==true)
         {
-            if (Input.GetKeyDown(KeyCode.P))
+            
+            if (Input.GetKey(KeyCode.P))
             {
                 _npcMasterManager._npcOdayaYolla();
+                _levelMasterManager._sellRoom();
             }
         }
 

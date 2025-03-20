@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class _gameMasterScript : MonoBehaviour
 {
+    public _npcMasterScript _npcMasterManager;
     public _playerScript _playerMasterManager;
-    public _npcScript _npcMasterManager;
+    //public _npcScript _npcScriptManager;
     void Start()
     {
         _playerMasterManager._playeriYenidenBaslat();
+        //_npcMasterManager._yeniNpclerYarat();
+        _npcMasterManager._randomZamanlardaNpcOlusturucu();
     }
 
     public void Update()
@@ -17,12 +20,7 @@ public class _gameMasterScript : MonoBehaviour
     }
     public void _leveliYenidenBaslat()
     {
-        /*
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            _playerMasterManager._playeriYenidenBaslat();
-        } 
-        */
+        
     }
 
 }
